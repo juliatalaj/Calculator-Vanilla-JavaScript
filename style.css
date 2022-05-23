@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(239, 224, 252);
+  font-family: Arial, sans-serif;
+}
+
+#calculator {
+  background-color: white;
+  max-width: 25rem;
+  margin: 4rem auto;
+  border-radius: 8px;
+}
+
+#result {
+  background-color: #191536;
+  color: white;
+  padding: 1rem 2.2rem;
+  min-height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 3rem;
+  border-radius: 8px 8px 0 0;
+  word-break: break-all;
+}
+
+.previous-number {
+  font-size: 1.2rem;
+  color: #787d8c;
+}
+
+#signs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font: 2rem;
+}
+
+#signs button {
+  padding: 1.5rem;
+  border: 0.5px solid #191536;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#signs .clear-btn {
+  grid-column: span 2;
+  border-top: none;
+}
+
+#signs .delete-btn {
+  border-top: none;
+}
+
+.zero {
+  grid-column: span 2;
+  border-bottom-left-radius: 8px;
+}
+
+.clear-btn,
+.delete-btn,
+.number,
+.zero,
+.comma-btn {
+  background: #2d305f;
+}
+
+#signs .divide-btn,
+#signs .multiply-btn,
+#signs .subtract-btn,
+#signs .add-btn {
+  background: #ccb1ff;
+  border: none;
+  border-top: 1px solid #a47cc9;
+  border-bottom: 1px solid #a47cc9;
+}
+
+#signs .equals-btn {
+  background: #bf53e6;
+  border: none;
+  border-bottom-right-radius: 8px;
+}
