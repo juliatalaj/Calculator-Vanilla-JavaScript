@@ -112,7 +112,6 @@ for (const operator of operators) {
 equalsBtn.addEventListener("click", () => {
   calculator.calculate();
   calculator.updateResult();
-  console.log("equals działa!");
 });
 
 clearBtn.addEventListener("click", () => {
